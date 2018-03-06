@@ -41,14 +41,17 @@ public class TripAdapter extends ArrayAdapter<TripModel> {
             TextView textLastname = (TextView)convertView.findViewById(R.id.textView_lastname);
             TextView textDate = (TextView)convertView.findViewById(R.id.textView_date);
             TextView textPrice = (TextView)convertView.findViewById(R.id.textView_price);
+            String prix = "$"+String.valueOf(trip.getPrice());
+            textPrice.setText(prix);
+            SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy hh:mm");
+            String dateformat = sdf.format(trip.getDate());
+            String date = dateformat + "PM";
+            textDate.setText(date);
 
             // Lookup view for data population
 
             // Populate the data into the template view using the data object
-            textFirstname.setText(trip.getFirstname());
-            textLastname.setText(trip.getLastname());
-            String.valueOf(textDate);
-            String.valueOf(textPrice);
+
 
 
 
