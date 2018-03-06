@@ -1,3 +1,5 @@
+package fr.wcs.blablawcs;
+
 import java.util.Date;
 
 /**
@@ -19,22 +21,35 @@ public class TripModel {
         this.price = price;
     }
 
+    public String getFirstname() {
+        return firstname;
+    }
+
     public void setFirstname(String firstname) {
         this.firstname = firstname;
+    }
+
+    public String getLastname() {
+        return lastname;
     }
 
     public void setLastname(String lastname) {
         this.lastname = lastname;
     }
 
+    public Date getDate() {
+        return date;
+    }
+
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public int getPrice() {
+        return price;
     }
 
     public void setPrice(int price) {
         this.price = price;
     }
-
-
-
 }
