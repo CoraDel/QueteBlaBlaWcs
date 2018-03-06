@@ -7,10 +7,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
@@ -35,7 +33,7 @@ public class TripAdapter extends ArrayAdapter<TripModel> {
             TripModel trip = (TripModel) getItem(position);
             // Check if an existing view is being reused, otherwise inflate the view
             if (convertView == null) {
-                convertView = LayoutInflater.from(getContext()).inflate(R.layout.idem_trip, parent, false);
+                convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_trip, parent, false);
             }
             TextView textFirstname = (TextView)convertView.findViewById(R.id.textView_firstname);
             TextView textLastname = (TextView)convertView.findViewById(R.id.textView_lastname);
