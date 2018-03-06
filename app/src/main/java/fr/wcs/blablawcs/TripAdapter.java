@@ -51,6 +51,8 @@ public class TripAdapter extends ArrayAdapter<TripModel> {
             // Lookup view for data population
 
             // Populate the data into the template view using the data object
+            textFirstname.setText(trip.getFirstname());
+            textLastname.setText(trip.getLastname());
 
 
 
