@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
  Intent intent=new Intent(this,SecondActivite.class);
  //on lance l'intent, cela a pour effet de stoper l'activité courante et lancer une autre activite ici SecondActivite
  startActivity(intent);
-
  *
  **/
 

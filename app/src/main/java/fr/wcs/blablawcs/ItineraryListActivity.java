@@ -23,9 +23,9 @@ public class ItineraryListActivity extends AppCompatActivity {
 
 
         Intent intent = getIntent();
-        String departure = intent.getStringExtra("departure");
-        String destination = intent.getStringExtra("destination");
-        setTitle(departure + " >> " + destination);
+        String departurey = intent.getStringExtra("departure");
+        String destinationXXX = intent.getStringExtra("destination");
+        setTitle(departurey + " >> " + destinationXXX);
 
         ListView listTrip = findViewById(R.id.list_trip);
         ArrayList<TripModel> results = new ArrayList<>();

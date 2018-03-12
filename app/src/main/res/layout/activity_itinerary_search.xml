@@ -7,6 +7,9 @@
     tools:context="fr.wcs.blablawcs.ItinerarySearchActivity"
     tools:layout_editor_absoluteY="81dp">
 
+
+
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
@@ -48,6 +51,8 @@
         android:ems="10"
         android:hint="01/01/1970"
         android:inputType="date"
+        android:clickable="true"
+        android:editable="false"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
