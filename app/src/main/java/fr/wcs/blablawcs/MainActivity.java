@@ -14,6 +14,8 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
 
+
+
         Button search =findViewById(R.id.button_search);
         search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -21,8 +23,21 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent=new Intent(MainActivity.this,ItinerarySearchActivity.class);
                 startActivity(intent);
             }
+
         });
+
+       Button auto =findViewById(R.id.button_vehicule);
+       auto.setOnClickListener(new View.OnClickListener() {
+           @Override
+           public void onClick(View view) {
+               Intent i=new Intent(MainActivity.this, VehiculeActivity.class);
+               startActivity(i);
+           }
+       });
+
+
     }
+
 
 /**
  *   public void Go(View v) {
