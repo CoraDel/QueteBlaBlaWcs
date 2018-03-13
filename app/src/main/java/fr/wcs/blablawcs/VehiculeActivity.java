@@ -69,14 +69,13 @@ public class VehiculeActivity extends AppCompatActivity {
                 if (selection.equals("Please select")) {
                     kilometres.setVisibility(View.GONE);
                     hours.setVisibility(View.GONE);
-                    speed.setEnabled(false);
+                    send.setEnabled(false);
                 }
 
-                if (selection.equals("Car"))
-                {send.setEnabled(true);
+                if (selection.equals("Car")) {
+                    send.setEnabled(true);
                     kilometres.setVisibility(View.VISIBLE);
                     hours.setVisibility(View.GONE);
-                    String kmCar = kilometres.getText().toString();
                     speed.setVisibility(View.GONE);
                     send.setOnClickListener(new View.OnClickListener() {
                         @Override
@@ -97,7 +96,7 @@ public class VehiculeActivity extends AppCompatActivity {
 
                     }
 
-                    if (selection.equals("Boat"))
+                    if (selection.equals("Boat")) {
                         hours.setVisibility(View.VISIBLE);
                         kilometres.setVisibility(View.GONE);
                         speed.setVisibility(View.GONE);
@@ -106,23 +105,22 @@ public class VehiculeActivity extends AppCompatActivity {
                         send.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View view) {
-                                String modelValue =  model.getText().toString();
+                                String modelValue = model.getText().toString();
                                 String brandValue = brand.getText().toString();
                                 String hoursBoat = hours.getText().toString();
 
                                 int hoursInt = 0;
-                                if (!hoursBoat.isEmpty())
-                                {
-                                    hoursInt=Integer.valueOf(hoursBoat);
+                                if (!hoursBoat.isEmpty()) {
+                                    hoursInt = Integer.valueOf(hoursBoat);
                                 }
                                 VehiculeBoat boat = new VehiculeBoat(modelValue, brandValue, hoursInt);
-                                Toast.makeText(VehiculeActivity.this,boat.getDescription(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(VehiculeActivity.this, boat.getDescription(), Toast.LENGTH_SHORT).show();
                             }
                         });
+                    }
 
 
-                        if(selection.equals("Plane"))
-                        {
+                        if(selection.equals("Plane")) {
                             hours.setVisibility(View.GONE);
                             kilometres.setVisibility(View.GONE);
                             speed.setVisibility(View.VISIBLE);
@@ -147,9 +145,6 @@ public class VehiculeActivity extends AppCompatActivity {
                             });
                         }
 
-                    {
-
-                    }
 
 
                 }
