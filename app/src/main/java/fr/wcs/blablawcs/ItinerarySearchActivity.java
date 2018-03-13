@@ -35,13 +35,16 @@ public class ItinerarySearchActivity extends AppCompatActivity {
                 String departure = departureValue.getText().toString();
                 EditText destinationValue = findViewById(R.id.editText_destination);
                 String destination = destinationValue.getText().toString();
+                EditText date = findViewById(R.id.editText_date);
+                String dateValue = date.getText().toString();
                     if (departure.matches("") | (destination.matches(""))) {
                         Toast.makeText(ItinerarySearchActivity.this, "Error", Toast.LENGTH_SHORT).show(); }
                     else {
                         Intent intent = new Intent(ItinerarySearchActivity.this, ItineraryListActivity.class);
-                        intent.putExtra("departure", departureValue.getText().toString());
-                        intent.putExtra("destination", destination);
-                        startActivity(intent); }
+                        SearchModel mod1 = new SearchModel(departure,destination,dateValue);
+                        intent.putExtra("mode", mod1);
+                        startActivity(intent);
+                    }
 
 
 

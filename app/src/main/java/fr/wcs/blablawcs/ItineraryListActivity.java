@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -21,11 +22,19 @@ public class ItineraryListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_itinerary_list);
 
 
+        SearchModel mod2 = getIntent().getExtras().getParcelable("mode");
+        setTitle(mod2.getDeparture()+">>"+ mod2.getDestination());
+        Toast.makeText(this, mod2.getDate(), Toast.LENGTH_SHORT).show();
 
+
+        /*
         Intent intent = getIntent();
         String departurey = intent.getStringExtra("departure");
         String destinationXXX = intent.getStringExtra("destination");
         setTitle(departurey + " >> " + destinationXXX);
+        */
+
+
 
         ListView listTrip = findViewById(R.id.list_trip);
         ArrayList<TripModel> results = new ArrayList<>();
