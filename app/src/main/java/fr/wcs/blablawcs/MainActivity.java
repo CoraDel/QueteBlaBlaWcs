@@ -13,9 +13,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-
-
         Button search =findViewById(R.id.button_search);
         search.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -37,8 +34,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
-
 /**
  *   public void Go(View v) {
  //on creer une nouvelle intent on definit la class de depart ici this et la class d'arrivé ici SecondActivite
@@ -47,11 +42,4 @@ public class MainActivity extends AppCompatActivity {
  startActivity(intent);
  *
  **/
-
-
-
-
-
-
-
 }

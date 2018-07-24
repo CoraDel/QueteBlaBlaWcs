@@ -25,7 +25,7 @@
             android:layout_alignStart="@+id/textView_firstname"
             android:layout_below="@+id/textView_price"
             android:inputType="date"
-            android:text="31/12/1970 03:30 PM" />
+            android:text="@string/_31_12_1970_03_30_pm" />
 
         <TextView
             android:id="@+id/textView_firstname"
@@ -37,7 +37,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginStart="15dp"
             android:layout_marginTop="29dp"
-            android:text="Firstname" />
+            android:text="@string/firstname" />
 
         <TextView
             android:id="@+id/textView_lastname"
@@ -47,7 +47,7 @@
             android:layout_alignBottom="@+id/textView_firstname"
             android:layout_alignEnd="@+id/textView_date"
             android:layout_alignRight="@+id/textView_date"
-            android:text="Lastname" />
+            android:text="@string/lastname" />
 
         <TextView
             android:id="@+id/textView_price"
@@ -58,7 +58,7 @@
             android:layout_centerVertical="true"
             android:layout_marginEnd="37dp"
             android:layout_marginRight="37dp"
-            android:text="$19" />
+            android:text="@string/_19" />
 
     </RelativeLayout>
 </LinearLayout>

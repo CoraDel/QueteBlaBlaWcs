@@ -53,27 +53,21 @@ public class ItineraryListActivity extends AppCompatActivity {
         adapter = new TripAdapter(this, results);
         listTrip.setAdapter(adapter);
 
-
-
-
-
     }
+}
 
 
+            /*
+        Dire à la listV qu'on utilise l'adapter -> la liste utilise l'adapter .setAdapter(adapter)
 
 
+        Le model ets l'objet qui va contenir l'information, les infos de la liste avec les getters et setters.
+
+        L'adapter permet de relier le tout.
 
 
+             */
 
-
-
-
-
-
-
-
-
-};
 
 
 

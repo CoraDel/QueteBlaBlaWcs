@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">BlaBlawcs</string>
+    <string name="search_your_itinerary">Search your itinerary</string>
+    <string name="button">Button</string>
+    <string name="model">Model</string>
+    <string name="brand">Brand</string>
+    <string name="kilometres">Kilometres</string>
+    <string name="hours">Hours</string>
+    <string name="send">Send</string>
+    <string name="speed">Speed</string>
+    <string name="firstname">Firstname</string>
+    <string name="lastname">Lastname</string>
+    <string name="_19">$19</string>
+    <string name="_31_12_1970_03_30_pm">31/12/1970 03:30 PM</string>
+    <string name="destination">Destination</string>
+    <string name="search">Search</string>
+    <string name="name">Name</string>
+    <string name="departure">Departure</string>
+
 </resources>

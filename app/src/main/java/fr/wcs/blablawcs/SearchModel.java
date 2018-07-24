@@ -66,8 +66,4 @@ public class SearchModel implements Parcelable {
         this.destination = destination;
         Date = date;
     }
-
-
-
-
 }

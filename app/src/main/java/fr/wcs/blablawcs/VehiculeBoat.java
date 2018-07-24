@@ -5,17 +5,12 @@ package fr.wcs.blablawcs;
  */
 
 public class VehiculeBoat extends VehiculeAbstract {
-
-
     int hours;
-
-
     public VehiculeBoat(String model, String brand, int hours) {
         this.setBrand(brand);
         this.setModel(model);
         this.hours = hours;
     }
-
 
     @Override
     public String getDescription() {

@@ -8,7 +8,6 @@ import java.util.Date;
 
 public class TripModel {
 
-
     String firstname = "Name";
     String lastname = "Last";
     Date date;
@@ -53,3 +52,10 @@ public class TripModel {
         this.price = price;
     }
 }
+
+
+/*
+Un getter permet d'acceder à un attribut,
+Setter : met une nouvelle valeur à l'interieur d'un attribut.
+Dans un objet avec attribut.
+ */

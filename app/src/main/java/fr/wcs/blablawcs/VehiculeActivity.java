@@ -22,7 +22,6 @@ import java.util.List;
  */
 
 
-
 public class VehiculeActivity extends AppCompatActivity {
     @Override
     public void onCreate(final Bundle savedInstanceState) {
@@ -30,11 +29,7 @@ public class VehiculeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_vehicule);
 
 
-        final Spinner spinner;
-
         final Spinner auto = findViewById(R.id.spinner_auto);
-
-
         List<String> categories = new ArrayList<String>();
         categories.add("Please select");
         categories.add("Car");
@@ -57,6 +52,7 @@ public class VehiculeActivity extends AppCompatActivity {
                 final EditText speed = findViewById(R.id.editText_speed);
                 final Button send = findViewById(R.id.button_send);
 
+                        // Maj F6 modifie partout les valeurs !
 
                 String hourboat = hours.getText().toString();
 
